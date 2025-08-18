@@ -57,7 +57,7 @@ AUTH-{REGISTER & LOGIN}
 | Method | Endpoint              | Description                   |
 | ------ | --------------------- | ----------------------------- |
 | POST   |  /api/auth/sign-up    | Register a new user           |
-| GET    |  /api/auth/sign-in    | Login and receive a JWT token |
+| POST   |  /api/auth/sign-in    | Login and receive a JWT token |
 
 TASK PROTECTED
 | Method |      Endpoint            | Role       | Description       |
