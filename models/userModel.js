@@ -21,7 +21,7 @@ const registerUser = new Schema(
     },
     role: {
       type: String,
-      required: [true, "role is Required"],
+
       enum: ["admin", "user"],
       default: "admin",
     },
