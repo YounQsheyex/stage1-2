@@ -62,11 +62,11 @@ const userLogin = async (req, res) => {
     if (!passwordMatch) {
       res.status(400).json({ message: "Incorrect Username or Password" });
     }
-    if (user.role !== role) {
-      if (!(user.role === "admin" && role === "user")) {
-        return res.status(403).json({ message: "Access Denied for this role" });
-      }
-    }
+    // if (user.role !== role) {
+    //   if (!(user.role === "admin" && role === "user")) {
+    //     return res.status(403).json({ message: "Access Denied for this role" });
+    //   }
+    // }
     const token = jwt.sign(
       { userId: user._id, role: user.role, userName: user.userName },
       process.env.JWT_SECRET,
