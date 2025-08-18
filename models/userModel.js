@@ -23,6 +23,7 @@ const registerUser = new Schema(
       type: String,
       required: [true, "role is Required"],
       enum: ["admin", "user"],
+      default: "admin",
     },
     password: {
       type: String,

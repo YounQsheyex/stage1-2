@@ -8,6 +8,6 @@ const {
 } = require("../middlewares/authMiddleware");
 
 router.post("/sign-up", registerUser);
-router.get("/sign-in", userLogin);
+router.post("/sign-in", userLogin);
 
 module.exports = router;
